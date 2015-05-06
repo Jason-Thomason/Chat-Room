@@ -97,7 +97,7 @@ public class Client extends JFrame {
 		}
 	}
 
-	private void showMessage(String message) {
+	private void showMessage(final String message) {
 		SwingUtilities.invokeLater(new Runnable() {
 			public void run() {
 				chatWindow.append(message);
@@ -105,7 +105,7 @@ public class Client extends JFrame {
 		});
 	}
 
-	private void setAbleToType(boolean bool) {
+	private void setAbleToType(final boolean bool) {
 		SwingUtilities.invokeLater(new Runnable() {
 			public void run() {
 				textInputField.setEditable(bool);
